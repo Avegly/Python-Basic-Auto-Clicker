@@ -5,7 +5,7 @@
 #Avegly Website: https://avegly.weebly.com/
 #Avegly GitHub: https://github.com/Avegly
 
-from pynput.mouse import Listener,Controller, Button
+from pynput.mouse import Controller, Button
 import keyboard, time,sys
 
 mouse = Controller()

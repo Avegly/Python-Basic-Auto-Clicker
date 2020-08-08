@@ -1,4 +1,4 @@
-#Python Basic Auto Clicker Open SourceV0.1
+#Python Basic Auto Clicker Open Source V0.1
 #by Avegly
 #This code is free for any use.
 

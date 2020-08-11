@@ -23,7 +23,7 @@ def start_clicks():
         #click line
         pyautogui.click()
         
-        time.sleep(0.0)
+        time.sleep(0.1)
 
 
 def start():

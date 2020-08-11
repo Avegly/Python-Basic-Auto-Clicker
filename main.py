@@ -1,4 +1,4 @@
-#Python Basic Auto Clicker Open Source V0.1
+#Python Basic Auto Clicker Open Source
 #by Avegly
 #This code is free for any use.
 
@@ -11,30 +11,36 @@ import time, sys
 
 
 def start_clicks():
-    print("Press F7 for exit, Press F8 for stop.")
+    print("Press",exitButton," for exit, Press",stopButton," for stop.")
     while True:
-        if keyboard.is_pressed("F7"):
+        if keyboard.is_pressed(exitButton):
             print("exit")
             sys.exit()
-        elif keyboard.is_pressed("F8"):
+        elif keyboard.is_pressed(stopButton):
             print("stop")
             start()
             break
         #click line
         pyautogui.click()
         
-        time.sleep(0.1)
+        time.sleep(0.0)
 
 
 def start():
-    print("Press ` for start, Press F7 for exit.")
+    print("Press",startButton," for start, Press",exitButton," for exit.")
     while True:
         time.sleep(0.1)
-        if keyboard.is_pressed("`"):
+        if keyboard.is_pressed(startButton):
             print("Start")
             start_clicks()
-        elif keyboard.is_pressed("F7"):
+        elif keyboard.is_pressed(exitButton):
             print("exit")
             sys.exit()
+
+startButton = "`"
+stopButton = "F7"
+exitButton = "F8"
+
 start()
+
 

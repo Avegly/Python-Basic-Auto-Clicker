@@ -5,10 +5,10 @@
 #Avegly Website: https://avegly.weebly.com/
 #Avegly GitHub: https://github.com/Avegly
 
-from pynput.mouse import Controller, Button
-import keyboard, time,sys
+import pyautogui #pip install PyAutoGUI
+import keyboard  #pip install keyboard
+import time, sys
 
-mouse = Controller()
 
 def start_clicks():
     print("Press F7 for exit, Press F8 for stop.")
@@ -21,9 +21,9 @@ def start_clicks():
             start()
             break
         #click line
-        mouse.click(Button.left,2)
+        pyautogui.click()
         
-        time.sleep(0.3)
+        time.sleep(0.0)
 
 
 def start():
@@ -36,7 +36,5 @@ def start():
         elif keyboard.is_pressed("F7"):
             print("exit")
             sys.exit()
-
-
 start()
 

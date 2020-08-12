@@ -23,7 +23,7 @@ def start_clicks():
         #click line
         pyautogui.click()
         
-        time.sleep(0.0)
+        time.sleep(sleepTime)
 
 
 def start():
@@ -37,6 +37,7 @@ def start():
             print("exit")
             sys.exit()
 
+sleepTime = 0.2
 startButton = "`"
 stopButton = "F7"
 exitButton = "F8"
